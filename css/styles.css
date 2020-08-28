@@ -2,6 +2,6 @@
   display: block;
 }
 
-#results {
+#results, #benDiskin, #stevenBlum, #elvisPresley {
   display: none;
 }
