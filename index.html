@@ -1,34 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.5.1.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>Celebrity Dating Quiz</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Which celebrity should YOU date?</h1>
 
-      <p>The following information will help narrow the search.</p>
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Celebrity Dating Quiz</title>
+</head>
 
-      <form id="celebrityElegibility">
-        <label for="age">Age</label>
-        <input id="age" type="text">
-        <label for="name">Name</label>
-        <input id="name" type="text">
-        <label for="band">Favorite Band</label>
-        <input id="band" type="text">
-        <label for="allergies">Allergies</label>
-        <input id="allergies" type="text">
+<body>
+  <div class="container">
+    <h1>Which celebrity should YOU date?</h1>
+
+    <p>The following information will help narrow the search.</p>
+
+    <form id="celebrityElegibility">
+      <div class="form-group" id="age-input">
+        <label class="control-label" for="age">Age</label>
+        <input id="age" type="text" class="form-control">
+      </div>
+      <div class="form-group" id="name-input">
+        <label class="control-label" for="name">Name</label>
+        <input id="name" type="text" class="form-control">
+      </div>
+      <div class="form-group" id="band-input">
+        <label class="control-label" for="band">Favorite Band</label>
+        <input id="band" type="text" class="form-control">
+      </div>
+      <div class="form-group" id="allergies-input">
+        <label class="control-label" for="allergies">Allergies</label>
+        <input id="allergies" type="text" class="form-control">
+      </div>
 
         <button type="submit" class="btn">Find your match!</button>
-      </form>
-      
-      <div id="results">
-        <p>Based on your answers, the celebrity you should most likely be dating is <span id="celebrity"></span>.</p>
-      </div>
+    </form>
+
+    <div id="results">
+      <p>Based on your answers, the celebrity you should most likely be dating is <span id="celebrity"></span>.</p>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

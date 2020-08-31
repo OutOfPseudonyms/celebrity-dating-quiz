@@ -1,9 +1,26 @@
 $(document).ready(function () {
   $("form#celebrityElegibility").submit(function (event) {
     event.preventDefault();
-    const age = parseInt($("input#age").val());
-    const band = $("input#band").val();
-    const allergies = $("input#allergies").val();
+    let age = 0
+    let band = ""
+    let allergies = ""
+    if ($("input#age").val() === "") {
+      $('#age-input').addClass("has-error");
+    } else {
+      age = parseInt($("input#age").val());
+    }
+
+    if ($("input#band").val() === "") {
+      $('#band-input').addClass("has-error");
+    } else {
+      band = $("input#band").val();
+    }
+
+    if ($("input#allergies").val() === "") {
+      $('#allergies-input').addClass("has-error");
+    } else {
+      allergies = $("input#allergies").val();
+    }
 
     $('#results').show();
 
